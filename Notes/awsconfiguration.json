@@ -1,0 +1,59 @@
+{
+  "UserAgent": "MobileHub/1.0",
+  "Version": "1.0",
+  "CredentialsProvider": {
+    "CognitoIdentity": {
+      "Default": {
+        "PoolId": "us-east-2:9e82fe66-3f69-465a-923a-5d6c579ba8bd",
+        "Region": "us-east-2"
+      }
+    }
+  },
+  "IdentityManager": {
+    "Default": {}
+  },
+  "CognitoUserPool": {
+    "Default": {
+      "PoolId": "us-east-2_PiXs8Lxql",
+      "AppClientId": "5698j579mk2n2ktkc222r2megj",
+      "AppClientSecret": "8pm9hulqv089mbhulimq897r8ot0le5kq1qhndpnsiuifgp0k7l",
+      "Region": "us-east-2"
+    }
+  },
+  "S3TransferUtility": {
+    "Default": {
+      "Bucket": "notes-userfiles-mobilehub-1131310125",
+      "Region": "us-east-2"
+    }
+  },
+  "DynamoDBObjectMapper": {
+    "Default": {
+      "Region": "us-east-2"
+    }
+  },
+  "PinpointAnalytics": {
+    "Default": {
+      "AppId": "f17d16eb7e034831b6c7c6327871f91a",
+      "Region": "us-east-1"
+    }
+  },
+  "PinpointTargeting": {
+    "Default": {
+      "Region": "us-east-1"
+    }
+  },
+  "UserFileManager": {
+    "Default": {
+      "Bucket": "notes-userfiles-mobilehub-1131310125",
+      "Region": "us-east-2"
+    }
+  },
+  "GoogleSignIn": {
+    "ClientId-iOS": "349621335871-7dnlvem8lh3aqvg31oiprkpk58ep2gae.apps.googleusercontent.com",
+    "Permissions": "email,profile,openid"
+  },
+  "FacebookSignIn": {
+    "AppId": "354356432011147",
+    "Permissions": "public_profile"
+  }
+}
