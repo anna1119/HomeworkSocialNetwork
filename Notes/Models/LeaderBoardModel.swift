@@ -25,6 +25,7 @@ class LeaderBoardModel: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     var _point: String?
     var _submittedArray: Set<String>?
     var _userName: String?
+
     
     class func dynamoDBTableName() -> String {
 

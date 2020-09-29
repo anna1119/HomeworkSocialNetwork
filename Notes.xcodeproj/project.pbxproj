@@ -35,6 +35,9 @@
 		223D5FE321E01F8B00BF5B63 /* ShownAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D5FE221E01F8B00BF5B63 /* ShownAnswerViewController.swift */; };
 		2241257521F0E33600D63DF4 /* LeaderBoardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241257421F0E33600D63DF4 /* LeaderBoardTableViewController.swift */; };
 		2241258D21F24BE500D63DF4 /* LeaderBoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241258C21F24BE500D63DF4 /* LeaderBoardModel.swift */; };
+		22EDF0DF2523B9D400F928D7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDF0DE2523B9D400F928D7 /* Note.swift */; };
+		22EDF0E02523B9D400F928D7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDF0DE2523B9D400F928D7 /* Note.swift */; };
+		22EDF0E12523B9D400F928D7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDF0DE2523B9D400F928D7 /* Note.swift */; };
 		4207DD3350E0AFB89D67B611 /* Pods_NotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CE1BAE5ABAC961E850D1EB /* Pods_NotesTests.framework */; };
 		56A14C94D346EA3248D78C8B /* Pods_NotesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AEC5E1AA6A6CD2BF7E32A4 /* Pods_NotesUITests.framework */; };
 /* End PBXBuildFile section */
@@ -92,6 +95,7 @@
 		223D5FE221E01F8B00BF5B63 /* ShownAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShownAnswerViewController.swift; sourceTree = "<group>"; };
 		2241257421F0E33600D63DF4 /* LeaderBoardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardTableViewController.swift; sourceTree = "<group>"; };
 		2241258C21F24BE500D63DF4 /* LeaderBoardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderBoardModel.swift; sourceTree = "<group>"; };
+		22EDF0DE2523B9D400F928D7 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		357515C775245172797DDD97 /* Pods-NotesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotesUITests/Pods-NotesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		43AEC5E1AA6A6CD2BF7E32A4 /* Pods_NotesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C3F2C528DE5D35B1CA13CC /* Pods-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.debug.xcconfig"; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 				220FB54E21F7FCD0004C1A56 /* CommentModel.swift */,
 				2241258C21F24BE500D63DF4 /* LeaderBoardModel.swift */,
 				223D5FE021DFE7B300BF5B63 /* Question.swift */,
+				22EDF0DE2523B9D400F928D7 /* Note.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -346,13 +351,16 @@
 				TargetAttributes = {
 					22012C1221D823D300A9DAF1 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1170;
 					};
 					22012C2621D823D700A9DAF1 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1170;
 						TestTargetID = 22012C1221D823D300A9DAF1;
 					};
 					22012C3121D823D700A9DAF1 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1170;
 						TestTargetID = 22012C1221D823D300A9DAF1;
 					};
 				};
@@ -562,6 +570,7 @@
 				220FB54221F7F80E004C1A56 /* CommentTableViewController.swift in Sources */,
 				22012C5D21DAC24900A9DAF1 /* AddAnswerViewController.swift in Sources */,
 				223D5FDB21DFD28800BF5B63 /* AnswerPoolTableViewController.swift in Sources */,
+				22EDF0DF2523B9D400F928D7 /* Note.swift in Sources */,
 				22012C1721D823D300A9DAF1 /* AppDelegate.swift in Sources */,
 				220FB55C21F92C58004C1A56 /* otherFunc.swift in Sources */,
 				220FB56021F94B22004C1A56 /* OthersViewController.swift in Sources */,
@@ -584,6 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22012C2C21D823D700A9DAF1 /* NotesTests.swift in Sources */,
+				22EDF0E02523B9D400F928D7 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +602,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22012C3721D823D700A9DAF1 /* NotesUITests.swift in Sources */,
+				22EDF0E12523B9D400F928D7 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,7 +771,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yuying.li.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -779,7 +790,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yuying.li.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -800,7 +811,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.NotesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notes.app/Notes";
 			};
@@ -822,7 +833,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.NotesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notes.app/Notes";
 			};
@@ -843,7 +854,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.NotesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Notes;
 			};
@@ -864,7 +875,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.NotesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Notes;
 			};

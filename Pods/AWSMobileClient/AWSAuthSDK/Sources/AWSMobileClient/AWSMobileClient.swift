@@ -161,7 +161,7 @@ public class AWSMobileClient: _AWSMobileClient {
     /// The singleton instance of `AWSMobileClient`.
     ///
     /// - Returns: The singleton `AWSMobileClient` instance.
-    @objc override public class func sharedInstance() -> AWSMobileClient {
+    @objc public override class func sharedInstance() -> AWSMobileClient {
         return _sharedInstance
     }
     

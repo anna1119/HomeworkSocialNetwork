@@ -72,17 +72,19 @@ func queryUserInformation(userPollArray: inout [LeaderBoardModel]) {
     qExp.expressionAttributeNames = ["#uId":"Key"]
     qExp.expressionAttributeValues = [":Key":KeyForUser]
     
+    var temp = userPollArray
     
     let objMapper = AWSDynamoDBObjectMapper.default()
     objMapper.query(LeaderBoardModel.self, expression: qExp) { (output, error) in
         if let userInformation = output?.items as? [LeaderBoardModel] {
             userInformation.forEach({ (user) in
-                userPollArray.append(user)
+                temp.append(user)
             })
             
         }
         
     }
+    userPollArray = temp
     
 }
 

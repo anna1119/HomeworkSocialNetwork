@@ -24,15 +24,17 @@ func queryQuestion(subject: String, specificPool: inout [Question]){
     qExp.expressionAttributeNames = ["#uId":"subject"]
     qExp.expressionAttributeValues = [":subject":subject]
     
+    var temp = specificPool
     
     let objMapper = AWSDynamoDBObjectMapper.default()
     objMapper.query(Question.self, expression: qExp) { (output, error) in
         if let questions = output?.items as? [Question] {
             questions.forEach({ (question) in
-                specificPool.append(question)
+                temp.append(question)
             })
         }
     }
+    specificPool = temp
 }
 
 
